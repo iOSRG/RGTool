@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RGTool'
-  s.version          = '0.0.1'
+  s.version          = '0.0.2'
   s.summary          = 'RGTool'
 
 # This description is used to generate tags and improve search results.
@@ -29,7 +29,10 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'RGTool/Classes/**/*'
+  
+  s.public_header_files = 'RGTool/BaseToolHeader.h'
+  s.source_files = 'RGTool/BaseToolHeader.h'
+  
   
   s.subspec 'Project' do |sp|
       sp.source_files = 'RGTool/Classes/Project/**/*'
