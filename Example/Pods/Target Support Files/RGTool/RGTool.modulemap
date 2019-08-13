@@ -1,0 +1,6 @@
+framework module RGTool {
+  umbrella header "RGTool-umbrella.h"
+
+  export *
+  module * { export * }
+}

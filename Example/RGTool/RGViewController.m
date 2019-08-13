@@ -7,6 +7,7 @@
 //
 
 #import "RGViewController.h"
+#import "BaseToolHeader.h"
 
 @interface RGViewController ()
 
@@ -17,7 +18,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	
+    NSString *version = [ProjectTool getAppVersion];
+    NSLog(@"version = %@",version);
+    
 }
 
 - (void)didReceiveMemoryWarning
